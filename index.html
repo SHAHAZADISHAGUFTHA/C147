@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head><script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script></head>
+    <body>
+        <a-scene>
+            <a-assets timeout="1000">
+                <a-asset-item src="./simple_dining_table/scene.gltf" id="Table"></a-asset-item>
+                <a-asset-item src="./lamp/scene.gltf" id="Lamp"></a-asset-item>
+            </a-assets>
+            <a-entity>
+                <a-entity position="0 -7 0" rotation="0 0 0" scale="0.01 0.01 0.01" gltf-model="#Table" shadow="cast:true"></a-entity>
+                <a-entity position="0 7.3 2" rotation="0 0 0" scale="0.5 0.5 0.5" gltf-model="#Lamp" shadow="cast:true"></a-entity>
+                <a-plane id="wall-poster" src="https://rukminim1.flixcart.com/image/416/416/j1zbf680/poster/c/j/f/medium-999779swhq10f1-coffee-break-poster-for-kitchen-dining-original-imaetdtxtagqbpdw.jpeg?q=70" position="0 6 -9.7" width="5" height="9"></a-plane>
+                <a-plane color="#E1C69F" position="0 0 -9.8" rotation="0 0 0" width="90" height="60"></a-plane>
+            </a-entity>
+        </a-scene>
+    </body>
+</html>
